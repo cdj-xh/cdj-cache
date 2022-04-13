@@ -6,5 +6,10 @@
 </head>
 <body>
 <script src="../release/bundle.js"></script>
+<script>
+  var oCache = new window.CdjCache();
+  oCache.setItem('a',100);
+  alert(oCache.getItem('a'))
+</script>
 </body>
 </html>
