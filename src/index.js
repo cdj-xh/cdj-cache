@@ -20,4 +20,5 @@ class CdjCache {
   }
 }
 
-window.CdjCache = CdjCache;
+export default CdjCache;
+
