@@ -8,7 +8,15 @@ class CdjCache {
   }
 
   getItem(key) {
-    return this.cacheData[key]
+    return this.cacheData[key];
+  }
+
+  clearAll() {
+    this.cacheData = {};
+  }
+
+  delItem(key) {
+    this.cacheData[key] && delete this.cacheData[key];
   }
 }
 
